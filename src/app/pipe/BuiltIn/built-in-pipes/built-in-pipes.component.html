@@ -1,0 +1,33 @@
+<h2>🔹 Angular Pipes Demo</h2>
+
+<!-- 1. Uppercase Pipe -->
+<p><b>Uppercase:</b> {{ 'hello angular' | uppercase }}</p>
+
+<!-- 2. Lowercase Pipe -->
+<p><b>Lowercase:</b> {{ 'HELLO ANGULAR' | lowercase }}</p>
+
+<!-- 3. Titlecase Pipe -->
+<p><b>Titlecase:</b> {{ 'welcome to angular pipes' | titlecase }}</p>
+
+<!-- 4. Date Pipe -->
+<p><b>Date:</b> {{ today | date:'fullDate' }}</p>
+<p><b>Custom Date:</b> {{ today | date:'dd/MM/yyyy' }}</p>
+
+<!-- 5. Currency Pipe -->
+<p><b>Currency:</b> {{ price | currency:'INR':'symbol':'1.2-2' }}</p>
+
+<!-- 6. Percent Pipe -->
+<p><b>Percent:</b> {{ 0.758 | percent }}</p>
+
+<!-- 7. JSON Pipe -->
+<p><b>JSON Pipe:</b></p>
+<pre>{{ user | json }}</pre>
+
+<!-- 8. Slice Pipe -->
+<p><b>Slice:</b> {{ 'AngularPipes' | slice:0:7 }}</p>
+
+<!-- 9. Custom Pipe (Reverse) -->
+<p><b>Custom Reverse Pipe:</b> {{ 'Angular' | CustomPipe }}</p>
+
+<!-- 10. Pipe Chaining -->
+<p><b>Chaining Pipe:</b> {{ 'angular chaining pipe' | uppercase | slice:0:7 }}</p>
