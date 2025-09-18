@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DemoComponentComponent } from './decorators/demo-component/demo-component.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { UsersComponent } from './services/users/users.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     RegisterComponent,
     DemoComponentComponent,
     HighlightDirective,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,

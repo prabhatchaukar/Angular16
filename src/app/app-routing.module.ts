@@ -5,6 +5,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DemoComponentComponent } from './decorators/demo-component/demo-component.component';
+import { UsersComponent } from './services/users/users.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // ✅ single default
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: 'decorators',component: DemoComponentComponent},
+  { path: 'services', component: UsersComponent},
   { path: 'pipes', component: BuiltInPipesComponent }, // ✅ route name fix
   { path: '**', redirectTo: '/login' }  
 ];
