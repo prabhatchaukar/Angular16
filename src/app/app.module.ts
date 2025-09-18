@@ -10,6 +10,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DemoComponentComponent } from './decorators/demo-component/demo-component.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DemoComponentComponent } from './decorators/demo-component/demo-compone
     LoginComponent,
     RegisterComponent,
     DemoComponentComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+import { Directive, ElementRef, Renderer2 } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+
+  constructor(private el:ElementRef, private renderer: Renderer2) {
+    renderer.setStyle(el.nativeElement,'backgroundColor','yellow');
+    renderer.setStyle(el.nativeElement,'padding','16px');
+    renderer.setStyle(el.nativeElement,'borderRadius','4px');
+   }
+
+}
