@@ -9,6 +9,7 @@ import { UsersComponent } from './services/users/users.component';
 import { ProductsComponent } from './services/products/products.component';
 import { TemplateValidationComponent } from './template-validation/template-validation.component';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // ✅ single default
@@ -20,6 +21,8 @@ const routes: Routes = [
   { path: 'dependencyInjection', component: ProductsComponent },
   {path: 'template-driven',component: TemplateValidationComponent},
   { path: 'react-validation', component: ReactiveValidationComponent},
+  { path: 'lifeCycleHooks', component: LifecycleHooksComponent},
+  { path:'authGuard', component: LoginComponent},
   { path: 'pipes', component: BuiltInPipesComponent }, // ✅ route name fix
   { path: '**', redirectTo: '/login' }  
 ];
