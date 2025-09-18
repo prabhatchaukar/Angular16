@@ -1,0 +1,20 @@
+<h2>Welcome to the DemoComponent</h2>
+
+<!-- Structural Directive: *ngIf-->
+
+<div *ngIf="isLoggedIn">✅ User LoggedIn</div>
+<div *ngIf="!isLoggedIn">❌ Please login</div>
+
+<!-- Structural Directive: *ngFor-->
+
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+
+<!-- Attribute Directive: ngClass-->
+
+<p [ngClass]="{'active': isActive, 'inactive': !isActive}">This is a styled paragraph</p>
+
+<!-- Custom Attribute Directive-->
+
+<p appHighlight>यह text custom directive से highlighted होगा!</p>
