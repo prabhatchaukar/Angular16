@@ -7,12 +7,15 @@ import { PipesModule } from './pipe/pipes/pipes.module';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DemoComponentComponent } from './decorators/demo-component/demo-component.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { UsersComponent } from './services/users/users.component';
 import { ProductsComponent } from './services/products/products.component';
+import { TemplateValidationComponent } from './template-validation/template-validation.component';
+import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +27,16 @@ import { ProductsComponent } from './services/products/products.component';
     HighlightDirective,
     UsersComponent,
     ProductsComponent,
+    TemplateValidationComponent,
+    ReactiveValidationComponent,
+    LifecycleHooksComponent,
   ],
   imports: [
     BrowserModule,
     PipesModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

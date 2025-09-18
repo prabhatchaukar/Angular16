@@ -1,0 +1,15 @@
+<h2>Reactive Form</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <!-- Email -->
+  <label>Email:</label>
+  <input type="text" formControlName="email">
+  <p *ngIf="email?.invalid && email?.touched">❌ Invalid Email</p>
+
+  <!-- Password -->
+  <label>Password:</label>
+  <input type="password" formControlName="password">
+  <p *ngIf="password?.invalid && password?.touched">❌ Weak Password</p>
+
+  <button type="submit" [disabled]="form.invalid">Submit</button>
+</form>

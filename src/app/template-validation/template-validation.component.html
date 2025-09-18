@@ -1,0 +1,14 @@
+<h2>Template-Driven Form</h2>
+
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="text" name="email" [(ngModel)]="email" required email>
+    <p class="paragraph">{{emailMessage}}</p>
+
+    <!-- Password -->
+     <label>Password:</label>
+     <input type="password" name="password" [(ngModel)] = "password" required minlength="6">
+     <p class="paragraph">{{passwordMessage}}</p>
+     <button type="sumit" [disabled]="f.invalid">Submit</button>
+</form>
