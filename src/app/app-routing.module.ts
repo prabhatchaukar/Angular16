@@ -10,6 +10,9 @@ import { ProductsComponent } from './services/products/products.component';
 import { TemplateValidationComponent } from './template-validation/template-validation.component';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { ParentComponent } from './parent/parent.component';
+import { SenderComponent } from './sender/sender.component';
+import { ReceiverComponent } from './receiver/receiver.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // ✅ single default
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'react-validation', component: ReactiveValidationComponent},
   { path: 'lifeCycleHooks', component: LifecycleHooksComponent},
   { path:'authGuard', component: LoginComponent},
+    { path: 'communication', component: ParentComponent },
+  { path: 'sender', component: SenderComponent },
+  { path: 'receiver', component: ReceiverComponent },
   { path: 'pipes', component: BuiltInPipesComponent }, // ✅ route name fix
   { path: '**', redirectTo: '/login' }  
 ];

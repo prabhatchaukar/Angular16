@@ -16,6 +16,10 @@ import { ProductsComponent } from './services/products/products.component';
 import { TemplateValidationComponent } from './template-validation/template-validation.component';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { SenderComponent } from './sender/sender.component';
+import { ReceiverComponent } from './receiver/receiver.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,10 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     TemplateValidationComponent,
     ReactiveValidationComponent,
     LifecycleHooksComponent,
+    ParentComponent,
+    ChildComponent,
+    SenderComponent,
+    ReceiverComponent,
   ],
   imports: [
     BrowserModule,

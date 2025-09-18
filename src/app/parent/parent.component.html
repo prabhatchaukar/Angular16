@@ -1,0 +1,10 @@
+<h2>Parent Component</h2>
+
+<input type="text" [(ngModel)]="parentMessage" placeholder="Type message for child">
+
+<!-- Pass data to child -->
+<app-child [messageFromParent]="parentMessage" 
+           (messageToParent)="receiveMessage($event)">
+</app-child>
+
+<p><strong>Message from Child:</strong> {{ childMessage }}</p>

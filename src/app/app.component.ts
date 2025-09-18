@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+navigateDropdown($event: Event) {
+throw new Error('Method not implemented.');
+}
   title = 'angular16';
 }
