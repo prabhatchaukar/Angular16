@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DemoComponentComponent } from './decorators/demo-component/demo-component.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { UsersComponent } from './services/users/users.component';
+import { ProductsComponent } from './services/products/products.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { UsersComponent } from './services/users/users.component';
     DemoComponentComponent,
     HighlightDirective,
     UsersComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,

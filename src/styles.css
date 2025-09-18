@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+h2,div,p,ul{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px;
+     
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
